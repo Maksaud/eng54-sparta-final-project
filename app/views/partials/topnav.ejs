@@ -1,0 +1,11 @@
+<!-- bootstrap header in partial -->
+<nav class="sparta-nav navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="sparta-brand" href="#"><img class="logoHeader" src="/images/sparta_white.svg" alt="Sparta Logo"></a>
+  <div class="title-main">
+    <% if (signedIn) { %>
+      <a id="logout_link" class="title title_link  float-right" href="/logout">Logout</a>
+    <% } else { %>
+      <a id="logout_link" class="title title_link  float-right" href="/login">Login</a>
+    <% } %>
+  </div>
+</nav>

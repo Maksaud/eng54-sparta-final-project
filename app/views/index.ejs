@@ -1,0 +1,35 @@
+<% include ./partials/topnav %>
+<div class="container">
+  <h1 id="page_title"class="h1 sparta_page_header">Send Assessment</h1>
+  <form id="assessment_form" class="formStyle" action="/" method='POST'>
+      <div class="form-group">
+        <label for="assessment">Assessment:</label>
+        <select class="dropdown"id="assessment" name="assessment" value="learning" >
+          <option value="csharp">C# Assessment</option>
+          <option value="java">Java Assessment</option>
+          <option value="psychometric">Psychometric Assessment</option>
+          <option value="python">Python Assessment</option>
+          <option value="learning">Python Learning Path Assessment</option>
+        </select>
+      </div>
+      <div class="checkbox" id="checkbox_container">
+        <label for="send_psychometrics">Send Psychometric Assessment In Addition:  </label>
+        <input name="send_psychometrics" type="checkbox"id="checkbox"/>
+      </div>
+      <div class="form-group">
+        <label for="candidate_name">Candidate Name:</label>
+        <input id="candidate_name" name="candidate_name" type="text" class="form-control form_fields" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter candidate name" required/>
+      </div>
+      <div class="form-group">
+        <label for="candidate_email">Candidate Email:</label>
+        <input id="candidate_email" name="candidate_email"type="email" placeholder="Enter candidate e-mail" class="form-control form_fields" name="candidate_email" required/>
+      </div>
+      <div class="form-group">
+        <label for="recruiter_email">Recruiter Email:</label>
+        <input id="recruiter_email" name="recruiter_email" type="email" placeholder="Enter recruiter e-mail" class="form-control form_fields" name="recruiter_email" required/>
+      </div>
+      <div class="form-group">
+        <button name="submit"type="submit" id="submit" class="btn btn-secondary submit" disabled="true">Submit</button>
+      </div>
+  </form>
+</div>

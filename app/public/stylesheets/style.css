@@ -1,0 +1,106 @@
+.dropdown {
+  background-color: lightGrey;
+  margin-right: 5px;
+  width: 100%;
+  position: relative;
+  display: inline;
+  border-radius: 2px;
+  height: 30px;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.sparta_page_header {
+  margin-top: 15px;
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #cec7c7;
+  background-color: #6c757d24;
+  border-color: #6c757d36;
+  cursor: help;
+}
+
+.checkbox {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #e33660;
+}
+
+.fieldRows {
+  width: 100vw;
+}
+
+.formStyle {
+  font-family: Khula;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.logoHeader {
+  height: 40px;
+}
+
+.form-control {
+  height: 40px;
+  padding-top: 9px;
+}
+
+.submit {
+  color: #394147;
+  border-radius: 120px;
+  width: 100px;
+  height: 43px;
+  background-color: white;
+  font-size: 11px;
+  font-family: Khula;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-top: 9px;
+  text-align: center;
+  padding-left: 16px;
+}
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Nav Bar Styling */
+
+.sparta-nav {
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-light {
+  background-color: #01181b !important;
+}
+
+.navbar {
+  height: 65px !important;
+}
+
+.title {
+  color: white;
+  padding: 15px 10px 15px;
+}
+
+.title_link:hover {
+  color: #e33660;
+}
+
+.sparta-brand {
+  padding-top: 0px;
+}
+
+.title-main {
+  display: block;
+  position: absolute;
+  right: 20px;
+}

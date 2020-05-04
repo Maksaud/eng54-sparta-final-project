@@ -1,0 +1,22 @@
+<% include ./partials/topnav %>
+
+<div class="container">
+<h1 class="h1 sparta_page_header">Register</h1>
+<% if (error) {%>
+<div class="alert alert-danger" role="alert">Error: <%= error.message %></div>
+<% } %>
+<% if (alert) {%>
+<div class="alert alert-success" role="alert">Alert: <%= alert.message %></div>
+<% } %>
+<form class="register_from formStyle" action="/register" method="post">
+  <div class="form-group">
+    <input type="text" name="username" value="" placeholder="Enter Username" class="form-control">
+  </div>
+  <div class="form-group">
+    <input type="password" name="password" value="" placeholder="Enter Password" class="form-control">
+  </div>
+    <div class="form-group">
+    <input type="submit" name="submit" value="Register" class="btn btn-secondary submit">
+  </div>
+</form>
+</div>

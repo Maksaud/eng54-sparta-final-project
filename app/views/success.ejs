@@ -1,0 +1,31 @@
+<% include ./partials/topnav %>
+<div class="container">
+<% if (candidate.combined === true) { %>
+  <div>
+    <h1 id="page_header" class="h1 sparta_page_header">Assessments Sent</h1>
+    <p class="lead"><strong><%= candidate.name %></strong> has been sent two assessment to: <strong><%= candidate.email %></strong></p>
+    <hr class="my-4">
+    <h5>Assessment 1: <%= candidate.type %></h5>
+    <h5>Assessment 2: Psychometric Assessment</h5>
+    <hr class="my-4">
+    <p class="lead">
+      <form class="" action="/" method="get">
+        <button class="btn btn-secondary submit" type="submit">Back</button>
+      </form>
+    </p>
+  </div>
+<% } else if (candidate.combined === false) { %>
+  <div>
+    <h1 id="page_header" class="h1 sparta_page_header">Assessment Sent</h1>
+    <p class="lead"><strong><%= candidate.name %></strong> has been sent one assessment to: <strong><%= candidate.email %></strong></p>
+    <hr class="my-4">
+    <h5>Assessment 1: <%= candidate.type %></h5>
+    <hr class="my-4">
+    <p class="lead">
+      <form class="" action="/" method="get">
+        <button class="btn btn-secondary submit" type="submit">Back</button>
+      </form>
+    </p>
+  </div>
+<% } %>
+</div>

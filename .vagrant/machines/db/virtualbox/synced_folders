@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/ubuntu/environment":{"guestpath":"/home/ubuntu/environment","hostpath":"/Users/MAhmed/code/opscode/project/dev-environment-sparta-project/environment/db","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/MAhmed/code/opscode/project/dev-environment-sparta-project","disabled":false,"__vagrantfile":true}}}
