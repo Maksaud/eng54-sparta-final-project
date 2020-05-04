@@ -28,8 +28,9 @@ Vagrant.configure("2") do |config|
     app.hostsupdater.aliases = ["development.local"]
     app.vm.synced_folder "app", "/home/ubuntu/app"
     app.vm.synced_folder "environment/app", "/home/ubuntu/environment"
+    app.vm.synced_file "env_variables/.env", "/.env"
     app.vm.provision "shell", path: "environment/app/provision.sh", privileged: false
-    app.vm.provision "shell", inline: set_env({ DB_HOST: "mongodb://192.168.10.150:27017/posts" }), privileged: false
+    app.vm.provision "shell", inline: set_env({ DB_HOST: "mongodb://192.168.10.150:27017/sparta" }), privileged: false
   end
 
   config.vm.define "db" do |db|

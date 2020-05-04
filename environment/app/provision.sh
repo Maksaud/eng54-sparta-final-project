@@ -11,10 +11,8 @@ sudo apt-get upgrade -y
 sudo apt-get install git -y
 
 # install nodejs
-
-# sudo apt-get install nodejs -y
-# sudo apt-get install python-software-properties -y
-# curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
 sudo apt-get install nodejs -y
 
 # if node js does not install npm
@@ -40,6 +38,3 @@ sudo cp /home/ubuntu/environment/nodeapp.conf /etc/nginx/sites-available/default
 # finally, restart the nginx service so the new config takes hold
 
 sudo systemctl restart nginx
-
-
-sudo mkdir /.env
